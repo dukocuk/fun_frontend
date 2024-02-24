@@ -13,8 +13,6 @@ code {
 }
 
 .navB {
-  /* Header */
-
   /* Auto layout */
   display: flex;
   flex-direction: row;
@@ -23,41 +21,30 @@ code {
   padding: 24px 80px;
   gap: 202px;
   background-color: #fffbeb !important;
-  color: #78350f !important;
 
-  width: 1440px;
+  width: 100%;
   height: 96px;
-
   /* Inside auto layout */
   flex: none;
   order: 1;
   align-self: stretch;
   flex-grow: 0;
-  z-index: 1;
 }
 
-.btnA {
-  background-color: #fffbeb !important;
+.navB .nav-link {
+  margin-right: 40px; /* Adjust the value to increase/decrease space between links */
   color: #78350f !important;
-  border-color: #78350f !important;
-}
-.btnB {
-  background-color: #fffbeb !important;
-  color: #78350f !important;
-  border: none !important;
+  font-weight: 600;
 }
 
 .firstBody {
-  /* Section */
-
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 80px;
   gap: 80px;
-
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
   height: 583px;
 
   /* Inside auto layout */
@@ -65,7 +52,52 @@ code {
   order: 2;
   align-self: stretch;
   flex-grow: 0;
-  z-index: 2;
+}
+
+@media (max-width: 767.98px) {
+  .firstBody {
+    flex-direction: column; /* Change flex direction to column */
+    align-items: center; /* Center items vertically */
+    padding: 40px; /* Adjust padding for smaller screens */
+    gap: 20px; /* Adjust gap between items */
+    height: auto; /* Set height to auto */
+  }
+  .secondBody {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .thirdBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: start;
+  }
+
+  .background-image {
+    margin-top: -4rem; /* Adjust margin-top */
+    width: 80% !important; /* Make the image occupy full width */
+    height: auto !important; /* Set height to auto */
+  }
+
+  .foreground-image {
+    margin-top: -4rem; /* Adjust margin-top */
+    transform: rotate(-34deg) !important; /* Adjust rotation */
+    width: 80% !important;
+  }
+
+  .shoe {
+    margin-top: 17rem; /* Adjust margin-top */
+    height: 100% !important;
+    z-index: 0 !important; /* Ensure the background image stays behind */
+    border: none !important;
+    background-color: transparent !important;
+  }
+
+  .hamburger {
+    background-color: #fffbeb;
+  }
 }
 
 .background-image {
@@ -73,8 +105,28 @@ code {
   top: 0;
   left: 0;
   margin-left: 3rem;
-  width: 65%;
-  height: 90% !important;
-  z-index: -1; /* Ensure the background image stays behind */
+  margin-top: -6rem;
+  width: 56% !important;
+  height: 150% !important;
+  z-index: 0 !important; /* Ensure the background image stays behind */
   border: none !important;
+  background-color: transparent !important;
+}
+
+.foreground-image {
+  margin-top: -10rem;
+  background-color: transparent !important;
+  border: none !important;
+  z-index: -1 !important;
+  transform: rotate(10deg);
+}
+
+.triangle {
+  background: linear-gradient(
+    to bottom right,
+    #fffbeb 0%,
+    #fffbeb 50%,
+    #fef3c7 50%,
+    #fef3c7 100%
+  ) !important;
 }
