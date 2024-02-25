@@ -1,5 +1,5 @@
 import { Container, Row, Col, Button, Image, Card } from "react-bootstrap";
-import { Cart, IconoirProvider } from "iconoir-react";
+import { Cart, FramePlusIn, IconoirProvider } from "iconoir-react";
 import firstPic from "../img/1.png";
 import secondPic from "../img/2.png";
 import thirdPic from "../img/3.png";
@@ -20,6 +20,7 @@ export default function ThirdBody() {
       style={{
         backgroundColor: "#0f172a",
         paddingTop: "40px",
+        paddingBottom: "40px",
       }}
     >
       <Container
@@ -56,6 +57,7 @@ export default function ThirdBody() {
           style={{
             backgroundColor: "#0f172a",
             paddingTop: "40px",
+            paddingBottom: "40px",
           }}
         >
           <Col className="thirdBody">

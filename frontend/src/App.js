@@ -3,6 +3,7 @@ import Header from "./containers/Header";
 import FirstBody from "./containers/FirstBody";
 import SecondBody from "./containers/SecondBody";
 import ThirdBody from "./containers/ThirdBody";
+import FourthBody from "./containers/FourthBody";
 import { Container } from "react-bootstrap";
 
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
         <SecondBody />
       </div>
       <ThirdBody />
+      <FourthBody />
     </div>
   );
 }
