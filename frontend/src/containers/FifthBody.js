@@ -1,4 +1,12 @@
-import { Container, Row, Col, Image, Card, CardBody } from "react-bootstrap";
+import {
+  Container,
+  Row,
+  Col,
+  Image,
+  Card,
+  CardBody,
+  Button,
+} from "react-bootstrap";
 import Slider from "react-slick";
 import { PiArrowCircleLeftThin } from "react-icons/pi";
 import { PiArrowCircleRightThin } from "react-icons/pi";
@@ -9,7 +17,7 @@ import Wave from "../img/Wave.png";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 export default function FifthBody() {
   const settings = {
@@ -20,6 +28,14 @@ export default function FifthBody() {
     infinite: true,
     autoplay: true,
     autoplaySpeed: 4000,
+  };
+
+  let sliderRef = useRef(null);
+  const next = () => {
+    sliderRef.slickNext();
+  };
+  const previous = () => {
+    sliderRef.slickPrev();
   };
 
   const cardsData = [
@@ -89,18 +105,25 @@ export default function FifthBody() {
           <Container className="d-flex justify-content-end">
             <PiArrowCircleLeftThin
               size={60}
-              style={{ marginTop: "-60px" }}
+              style={{ marginTop: "-60px", cursor: "pointer" }}
               className="btnB"
+              onClick={previous}
             />
             <PiArrowCircleRightThin
               size={60}
-              style={{ marginTop: "-60px" }}
+              style={{ marginTop: "-60px", cursor: "pointer" }}
               className="btnB"
+              onClick={next}
             />
           </Container>
         </Row>
         <Row>
-          <Slider {...settings}>
+          <Slider
+            ref={(slider) => {
+              sliderRef = slider;
+            }}
+            {...settings}
+          >
             {cardsData.map((cards) => (
               <Col key={cards.id}>
                 <div
