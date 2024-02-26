@@ -6,6 +6,7 @@ import ThirdBody from "./containers/ThirdBody";
 import FourthBody from "./containers/FourthBody";
 import FifthBody from "./containers/FifthBody";
 import SixthBody from "./containers/SixthBody";
+import SeventhBody from "./containers/SeventhBody";
 import { useRef } from "react";
 
 export default function App() {
@@ -30,6 +31,7 @@ export default function App() {
       <FourthBody />
       <FifthBody />
       <SixthBody />
+      <SeventhBody />
     </div>
   );
 }
