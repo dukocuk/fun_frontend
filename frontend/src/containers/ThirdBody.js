@@ -22,6 +22,7 @@ export default function ThirdBody() {
         paddingTop: "40px",
         paddingBottom: "40px",
       }}
+      id="section1Ref"
     >
       <Container
         style={{
@@ -67,6 +68,7 @@ export default function ThirdBody() {
                 backgroundColor: "#0f172a",
                 color: "#FFF",
               }}
+              className="shadow-lg p-3 mb-5white rounded"
             >
               <Card.Img variant="top" src={firstPic} />
               <Card.Body>
@@ -100,6 +102,7 @@ export default function ThirdBody() {
                 backgroundColor: "#0f172a",
                 color: "#FFF",
               }}
+              className="shadow-lg p-3 mb-5white rounded"
             >
               <Card.Img variant="top" src={secondPic} />
               <Card.Body>
@@ -133,6 +136,7 @@ export default function ThirdBody() {
                 backgroundColor: "#0f172a",
                 color: "#FFF",
               }}
+              className="shadow-lg p-3 mb-5white rounded"
             >
               <Card.Img variant="top" src={thirdPic} />
               <Card.Body className="thirdBody">

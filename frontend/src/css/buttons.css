@@ -14,6 +14,15 @@
   font-weight: 600 !important;
 }
 
+.btnC {
+  background-color: #ffffff !important;
+  color: #78350f !important;
+  border-color: #78350f !important;
+  padding: 0 2rem 0 2rem;
+  font-weight: 600 !important;
+  border-style: solid !important;
+}
+
 .thirdBodyBtn {
   background-color: "transparent" !important;
   border-color: "white" !important;

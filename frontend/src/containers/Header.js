@@ -4,6 +4,8 @@ import { useState } from "react";
 export default function Header() {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
+  // Function to handle scrolling to a specific section
+
   const handleToggleNavbar = () => {
     // Toggle the navbar state
     setNavbarOpen(!navbarOpen);
@@ -34,7 +36,7 @@ export default function Header() {
         />
         <Navbar.Collapse id="responsive-navbar-nav" className="hamburger">
           <Nav className="ms-auto">
-            <Nav.Link href="#features">Products</Nav.Link>
+            <Nav.Link href="#section1Ref">Products</Nav.Link>
             <Nav.Link href="#pricing">Solutions</Nav.Link>
             <Nav.Link href="#pricing">Pricing</Nav.Link>
             <Nav.Link href="#pricing">Resources</Nav.Link>

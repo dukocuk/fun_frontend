@@ -4,9 +4,12 @@ import FirstBody from "./containers/FirstBody";
 import SecondBody from "./containers/SecondBody";
 import ThirdBody from "./containers/ThirdBody";
 import FourthBody from "./containers/FourthBody";
-import { Container } from "react-bootstrap";
+import FifthBody from "./containers/FifthBody";
+import { useRef } from "react";
 
 export default function App() {
+  // Create an array of refs for the sections
+
   return (
     <div className="App">
       <Header />
@@ -24,6 +27,7 @@ export default function App() {
       </div>
       <ThirdBody />
       <FourthBody />
+      <FifthBody />
     </div>
   );
 }

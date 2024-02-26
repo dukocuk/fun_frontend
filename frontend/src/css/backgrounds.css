@@ -29,6 +29,18 @@
   ) !important;
 }
 
+.rectangle {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: #fde68a;
+  border: none !important;
+  border-color: #fde68a !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-top: "-20rem";
+}
+
 @media (max-width: 767.98px) {
   .background-image {
     margin-top: -4rem; /* Adjust margin-top */
